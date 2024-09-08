@@ -11,7 +11,7 @@ async function checkWeather (city){
         document.getElementById("error_message").style.display="block";
         //  document.querySelector(".weather").style.display = "none";
     }
-    else{
+    
         
     let data = await response.json();
     
@@ -45,7 +45,7 @@ async function checkWeather (city){
     style.display= "block";
     document.querySelector(".error").style.display = "none";
  }
-}
+
 searchBtn.addEventListener("click", ()=>{ checkWeather(searchBox.value);
 
 });
